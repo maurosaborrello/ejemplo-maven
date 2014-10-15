@@ -1,0 +1,95 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Simple Java Maven Project 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:2.1:sonar (default-cli) @ example-java-maven ---
+[INFO] SonarQube version: 4.5
+INFO: Default locale: "es_CO", source code encoding: "UTF-8"
+INFO: Work directory: C:\sonar\sonar-examples-master\projects\languages\java\maven\java-maven-simple\target\sonar
+INFO: SonarQube Server 4.5
+[INFO] [15:47:40.628] Load global referentials...
+[INFO] [15:47:41.559] Load global referentials done: 942 ms
+[INFO] [15:47:41.646] User cache: C:\Users\AndresMauricio\.sonar\cache
+[INFO] [15:47:41.667] Install plugins
+[INFO] [15:47:41.994] Install JDBC driver
+[INFO] [15:47:42.014] Create JDBC datasource for jdbc:mysql://localhost:3306/sonar?useUnicode=true&characterEncoding=utf8
+[INFO] [15:47:47.212] Initializing Hibernate
+[INFO] [15:47:53.629] Load project referentials...
+[INFO] [15:47:55.528] Load project referentials done: 1900 ms
+[INFO] [15:47:55.529] Load project settings
+[INFO] [15:47:56.995] Loading technical debt model...
+[INFO] [15:47:57.056] Loading technical debt model done: 61 ms
+[INFO] [15:47:57.063] Apply project exclusions
+[INFO] [15:47:58.083] -------------  Scan Simple Java Maven Project
+[INFO] [15:47:58.095] Load module settings
+[INFO] [15:47:59.259] Language is forced to java
+[INFO] [15:47:59.262] Loading rules...
+[INFO] [15:48:01.316] Loading rules done: 2054 ms
+[INFO] [15:48:01.396] Configure Maven plugins
+[INFO] [15:48:01.904] No quality gate is configured.
+[INFO] [15:48:02.513] Initializer FindbugsMavenInitializer...
+[INFO] [15:48:02.514] Initializer FindbugsMavenInitializer done: 1 ms
+[INFO] [15:48:02.515] Base dir: C:\sonar\sonar-examples-master\projects\languages\java\maven\java-maven-simple
+[INFO] [15:48:02.515] Working dir: C:\sonar\sonar-examples-master\projects\languages\java\maven\java-maven-simple\target\sonar
+[INFO] [15:48:02.524] Source paths: src/main/java
+[INFO] [15:48:02.526] Binary dirs: target/classes
+[INFO] [15:48:02.527] Source encoding: UTF-8, default locale: es_CO
+[INFO] [15:48:02.527] Index files
+[INFO] [15:48:02.694] 1 files indexed
+[INFO] [15:48:03.288] Quality profile for java: Sonar way
+[INFO] [15:48:03.319] Sensor JavaSquidSensor...
+[INFO] [15:48:03.493] Java Main Files AST scan...
+[INFO] [15:48:03.509] 1 source files to be analyzed
+[INFO] [15:48:03.971] 1/1 source files analyzed
+[INFO] [15:48:03.976] Java Main Files AST scan done: 483 ms
+[INFO] [15:48:03.980] Java bytecode scan...
+[INFO] [15:48:04.067] Java bytecode scan done: 87 ms
+[INFO] [15:48:04.068] Java Test Files AST scan...
+[INFO] [15:48:04.068] 0 source files to be analyzed
+[INFO] [15:48:04.069] Java Test Files AST scan done: 1 ms
+[INFO] [15:48:04.069] 0/0 source files analyzed
+[INFO] [15:48:04.092] Package design analysis...
+[INFO] [15:48:04.109] Package design analysis done: 17 ms
+[INFO] [15:48:04.210] Sensor JavaSquidSensor done: 891 ms
+[INFO] [15:48:04.211] Sensor QProfileSensor...
+[INFO] [15:48:04.224] Sensor QProfileSensor done: 13 ms
+[INFO] [15:48:04.225] Sensor InitialOpenIssuesSensor...
+[INFO] [15:48:04.316] Sensor InitialOpenIssuesSensor done: 91 ms
+[INFO] [15:48:04.317] Sensor ProjectLinksSensor...
+[INFO] [15:48:04.429] Sensor ProjectLinksSensor done: 112 ms
+[INFO] [15:48:04.432] Sensor VersionEventsSensor...
+[INFO] [15:48:04.499] Sensor VersionEventsSensor done: 67 ms
+[INFO] [15:48:04.500] Sensor FileHashSensor...
+[INFO] [15:48:04.503] Sensor FileHashSensor done: 3 ms
+[INFO] [15:48:04.503] Sensor SurefireSensor...
+[INFO] [15:48:04.506] parsing C:\sonar\sonar-examples-master\projects\languages\java\maven\java-maven-simple\target\surefire-reports
+[WARN] [15:48:04.507] Reports path not found: C:\sonar\sonar-examples-master\projects\languages\java\maven\java-maven-simple\target\surefire-reports
+[INFO] [15:48:04.507] Sensor SurefireSensor done: 4 ms
+[INFO] [15:48:04.507] Sensor Maven dependencies...
+[INFO] [15:48:04.529] Sensor Maven dependencies done: 22 ms
+[INFO] [15:48:04.529] Sensor CPD Sensor (wrapped)...
+[INFO] [15:48:04.530] JavaCpdEngine is used for java
+[INFO] [15:48:04.532] Cross-project analysis disabled
+[INFO] [15:48:04.585] Sensor CPD Sensor (wrapped) done: 56 ms
+[INFO] [15:48:05.663] Execute decorators...
+[INFO] [15:48:06.626] Store results in database
+[INFO] [15:48:07.536] ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/org.codehaus.sonar:example-java-maven
+[INFO] [15:48:07.928] Executing post-job class org.sonar.plugins.core.issue.notification.SendIssueNotificationsPostJob
+[INFO] [15:48:08.004] Executing post-job class org.sonar.plugins.core.batch.IndexProjectPostJob
+[INFO] [15:48:08.181] Executing post-job class org.sonar.plugins.dbcleaner.ProjectPurgePostJob
+[INFO] [15:48:08.237] -> Keep one snapshot per day between 2014-09-16 and 2014-10-13
+[INFO] [15:48:08.241] -> Keep one snapshot per week between 2013-10-15 and 2014-09-16
+[INFO] [15:48:08.242] -> Keep one snapshot per month between 2009-10-20 and 2013-10-15
+[INFO] [15:48:08.242] -> Delete data prior to: 2009-10-20
+[INFO] [15:48:08.266] -> Clean Simple Java Maven Project [id=1]
+[INFO] [15:48:08.281] <- Delete aborted builds
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 33.596 s
+[INFO] Finished at: 2014-10-14T15:48:08-05:00
+[INFO] Final Memory: 19M/272M
+[INFO] ------------------------------------------------------------------------
